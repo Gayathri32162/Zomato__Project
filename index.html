@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Zomato Clone</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand"><!--this is for logo-->
+                <img src="assets\assets/logo.png" alt="logo" class="navbar__logo"/><!--dont use image class for styling bcoz image has its own height and width so it wont look good-->
+            </div>
+            <div class="navbar__button__primarys"> <!--this is for button--><!--it is good to use underscore which shows proffesionalism-->
+                <button class="nav__item button__primary ">Order Food</button><!--one of the nav item-->
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+    <!--hero section(front part)-->
+    <section class="hero__container">
+            <div class="hero__image__container">
+                <img src="assets\assets/hero.jpg" alt="hero image" class="hero__image">
+                <!-- <img src="assets\assets/svg/heroShape.svg" alt="heroShape"/> -->
+            </div>
+            <div class="hero__description">
+                <h1 class="hero__text">Order food from favourite restaurants near you.</h1>
+                <button class="button__primary">Order Now</button>
+            </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <!--explore menu-->
+    <section class="explore__menu__container">
+        <h1 style="color: white;" class="explore__menu__text"> Explore Our Menu</h1>
+        <div class="explore__menu__gradient__background">  
+        </div>
+        <!--burger-->
+        <div class="explore__menu__lists">
+            <div class="food__cards">
+                <div class="food__card__image__container">
+                   <img src="assets\assets/burger.jpg" alt="burger" class="food__image">
+                </div>
+                <div class="food__card__description">
+                <h1 style="color: white;" class="food__title"> Burgers</h1>
+                <p1 style="color:white;">Burger King, Mcdonalds, Burger Place <span style="color:#D83A56;">+3</span></p1>
+                </div>
+            </div>
+        
+        <!--pizza-->
+            <div class="food__cards" id="pizza__card">
+                <div class="food__card__image__container">
+                   <img src="assets\assets/pizza.jpg" alt="burger" class="food__image">
+                </div>
+                <div class="food__card__description">
+                    <h1 style="color: white;" class="food__title"> Pizzas</h1>
+                    <p1 style="color:white;">Pizza Hut, Domino's Pizza<span style="color:#D83A56;">+3</span></p1>
+                </div>
+            </div>
+        
+        <!--icecreams-->
+            <div class="food__cards">
+                <div class="food__card__image__container">
+                   <img src="assets\assets/iceCream.jpg" alt="burger" class="food__image">
+                </div>
+                <div class="food__card__description">
+                    <h1 style="color: white;" class="food__title">iceCream</h1>
+                    <p1 style="color:white;">Baskin Robins, Ibaco<span style="color:#D83A56;">+3</span></p1>
+                </div>
+            </div>
+        </div>
+    </section>
+ </main>
+</body>
+</html>
