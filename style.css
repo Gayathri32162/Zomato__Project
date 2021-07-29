@@ -163,7 +163,7 @@ body{
     display: flex;
     gap: 10px;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .video__player::before{
     background: linear-gradient(
