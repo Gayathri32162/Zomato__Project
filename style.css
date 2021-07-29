@@ -13,6 +13,8 @@ body{
     justify-content: space-around;/*to get the space around items*/
     background-color:   #333333;
     box-shadow: 3px 3px 20%#470202;
+    position: sticky;
+    
     
 }
 .navbar__brand{
@@ -118,12 +120,13 @@ body{
     margin-top: 30px;
 }
 .restaurant__list__row_2{
+    margin-top: 10px;
     display: flex;
     flex-direction: row-reverse;
 }
 .restaurant1,.restaurant3{
-    width: 150px;
-    height: 80px;
+    width: 200px;
+    height: 100px;
     margin-bottom: 10px;
     box-shadow: #333333;
     border-radius: 4px;
@@ -176,10 +179,9 @@ body{
         height: 100%;
         width: 100%;
         z-index: -1;
-        margin-bottom: -20px;
+        
         top: 20px;
-        margin-left: 20px;
-        right: -10px;
+        
 
 }
 .video__player{
@@ -198,12 +200,41 @@ body{
 .explore__menu__container{
     margin-top: -10px;
 }
+.quote__image{
+    width: 100%;
+    height: 100px;
+}
+.stay__updated{
+    text-align: center;
+    
+}
+.text{
+    font-weight: 900;
+}
+.footer__list{
+    text-align: center;
+    list-style-type: none;
+}
+.bottom__logo{
+    filter: brightness(0) invert(1);
+}
+.footer__container{
+
+    margin-top: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: linear-gradient(
+        to right,
+        #f55f3a 0%,
+        #ff3791 51%,
+        #f52900 100%);
+}
+
 @media (min-width: 768px){
     .explore__menu__container{
         position: relative;
         
     }
-    
     .explore__menu__text{
         margin-top: 20px;
         font-weight: 900;
@@ -258,7 +289,7 @@ body{
     .list__description{
         padding-top: 50px;
         text-align: center;
-        font-weight: 900;
+        font-weight: bolder;
     }
     .restaurant__list__container{
         display: flex;
@@ -272,13 +303,52 @@ body{
     .stay__updated{
         text-align: center;
         font-weight: 900;
+        font-size: 20px;
     }
-    input[type=email]{
-        border-radius: 2px;
-        width: 100px
+    .email__input{
+        border: 0pxs;
+        width: 20rem;
+        padding: 50px;
+        margin: -10px;
+
     }
+    .restaurant2{
+        height: 110px;
+    }
+    .restaurant1{
+        width: 180px;
+    }
+    .restaurant3{
+        width: 150px;
+    }
+    .footer__container{
+        display: flex;
+        gap: 80px;
+    }
+    .footer__list{
+        margin-top: 40px;
+        font-weight: 900;
+        font-size: 20px;
+    }
+    .list__text{
+        font-size: 30px;
+    }
+    .update__button{
+        font-size: 20px;
+    }
+    .email{
+        size: 20px;
+    }
+   
 }
 @media (min-width: 1024px){
+    .video__container{
+        display: none;
+        /* width: 50%;
+        left:  -20px; */
+
+
+    }
     .explore__menu__lists{
         
         gap: 25px;
@@ -312,4 +382,35 @@ body{
     .explore__menu__gradient__background{
         position: absolute;
     }
+    .list__description{
+        font-size: 30px;
+    }
+    .stay__updated{
+        font-size: 30px;
+    }
+ 
+    .restaurant1{
+        width: 300px;
+        height: 200px;
+        box-shadow: #333333 50px;
+    }
+   .restaurant2{
+       width: 250px;
+       height: 180px;
+       box-shadow:20% #333333;
+   }
+   .restaurant3{
+       width: 250px;
+       height: 150px;
+       box-shadow: 20%#333333;
+    }
+    .restaurant4{
+        width: 250px;
+        height: 180px;
+        box-shadow:20% #333333;
+    }
+    .footer__container{
+        justify-content: space-evenly;
+    }
+    
 }
